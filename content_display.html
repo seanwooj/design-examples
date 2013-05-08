@@ -1,0 +1,138 @@
+<html>
+<head>
+	<title></title>
+	<!-- Don't leave styles in the html, this is merely for demonstration purposes -->
+	<style>
+		body {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+
+		.content-box {
+			width: 400px;
+			background: #444;
+			float: left;
+			margin: 10px;
+		}
+
+		.content-box:hover {
+			/*background: #4ECDC4;*/
+			/*-webkit-transform: rotate(0.5deg);*/
+		}
+
+		.content-box .content-image {
+			width: 100%;
+		}
+
+		.text-content {
+			padding: 10px 20px;
+		}
+
+		.content-share {
+
+		}
+
+		.share-button {
+			background: rgb(200,100,0);
+			color: white;
+			text-decoration: none;
+			padding: 15px 15px;
+			float: right;
+			position: relative;
+			top: -10px;
+		}
+
+		.category {
+			float: left;
+			font-size: 16pt;
+			color: #999;
+		}
+
+		.content-title {
+			color: white;
+			text-transform: uppercase;
+		}
+
+		.text-content p {
+			color: #999;
+			line-height: 1.5em;
+		}
+
+		.clearfix {
+			clear: both;
+		}
+
+	</style>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/masonry.min.js"></script>
+	<script>
+		$(function(){
+			var $container = $('.container');
+			$container.imagesLoaded(function(){
+			  $container.masonry({
+			    itemSelector : '.content-box',
+			    columnWidth : 420,
+			    isAnimated: true
+			  });
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="content-box">
+			<img src="img/hand.jpg" class="content-image" />
+			<div class="text-content">
+				<div class="content-share">
+					<span class="category">Category</span>
+					<a href="#" class="share-button">&#10084</a>
+					<br class="clearfix" />
+				</div>
+				<h3 class="content-title">Title</h3>
+				<p>Lorem Ipsumto electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+		</div>
+
+		<div class="content-box">
+			<img src="img/hand.jpg" class="content-image" />
+			<div class="text-content">
+				<div class="content-share">
+					<span class="category">Category</span>
+					<a href="#" class="share-button">&#10084</a>
+					<br class="clearfix" />
+				</div>
+				<h3 class="content-title">Title</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+		</div>
+
+		<div class="content-box">
+			<img src="img/hand.jpg" class="content-image" />
+			<div class="text-content">
+				<div class="content-share">
+					<span class="category">Category</span>
+					<a href="#" class="share-button">&#10084</a>
+					<br class="clearfix" />
+				</div>
+				<h3 class="content-title">Title</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+		</div>
+
+
+		<div class="content-box">
+			<img src="img/hand.jpg" class="content-image" />
+			<div class="text-content">
+				<div class="content-share">
+					<span class="category">Category</span>
+					<a href="#" class="share-button">&#10084</a>
+					<br class="clearfix" />
+				</div>
+				<h3 class="content-title">Title</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, bcently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
