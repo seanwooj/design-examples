@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Image Overlay</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.nav {
+			background: white;
+			border-bottom: 1px solid #ccc;
+			height: 60px;
+		}
+
+		.nav h1 {
+		}
+
+		.image {
+			min-height: 500px;
+			width: 100%;
+			background: url("img/bw_bg.jpg");
+		}
+
+		.overlay {
+			min-height: 500px;
+			width: 100%;
+			background: rgba(200,100,0,0.3);
+			display: none;
+		}
+	</style>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+		$(function(){
+			$(".image").hover(function(){
+				$(".overlay").fadeIn();
+			}, function(){
+				$(".overlay").fadeOut();
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="nav">
+	</div>
+
+	<div class="image">
+		<div class="overlay">
+
+		</div>
+	</div>
+
+	<div class="content-wrapper">
+		<div class="content">
+
+		</div>
+	</div>
+</body>
+</html>
