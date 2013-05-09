@@ -1,0 +1,201 @@
+<html>
+
+<head>
+	<title>Really Awesome Homepage (Think geocities)</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+
+		header {
+			padding-top: 30px;
+			height: 60px;
+		}
+
+		.logo {
+			float: left;
+			margin-top: 10px;
+			margin-left: 10px;
+		}
+
+		.logo a {
+			color: #444;
+			text-decoration: none;
+			padding: 10px 20px;
+			background: #73EAC1;
+		}
+
+		.logo a:hover {
+			background: #25E09F;
+		}
+
+		nav ul {
+			float: right;
+		}
+
+		nav ul li {
+			float: left;
+		}
+
+		nav ul li a {
+			color: #444;
+			text-decoration: none;
+			padding: 21px;
+			display: inline-block;
+		}
+
+		nav ul li a:hover {
+			background: #25E09F;
+		}
+
+		.masthead {
+			background: url("http://ivomynttinen.com/theme/img/home/teaser1400.jpg");
+			background-size: cover;
+		}
+
+		.content-container {
+			text-align: center;
+			padding-bottom: 100px;
+		}
+
+		.content-container .content {
+			width: 400px;
+			margin: 0 auto;
+		}
+
+		.masthead h2 {
+			margin-top: 80px;
+			margin-bottom: 10px;
+		}
+
+		.masthead p {
+			font-size: 12px;
+			color: #333;
+			display: block;
+		}
+
+		.content a {
+			padding: 15px;
+			background: #73EAC1;
+			display: inline-block;
+			margin: 10px;
+			color: #333;
+			text-decoration: none;
+		}
+
+		.content a:hover {
+			background: #25E09F;
+		}
+
+		/* This is the most important aspect of this CSS, because it gives us our spacing */
+		.inner {
+			width: 960px;
+			margin: 0 auto;
+		}
+
+		.fold.inner {
+			padding: 60px 0 40px 0;
+			text-align: center;
+		}
+
+		.subheader {
+			color: #666;
+			font-weight: 100;
+			margin: 10px;
+		}
+
+		.thirds {
+			width: 33%;
+			box-sizing: border-box;
+			float: left;
+		}
+
+		.info-box {
+			background: #73EAC1;
+			margin: 10px;
+			margin-top: 30px;
+			padding: 10px;
+		}
+
+		footer {
+			background: #eee;
+			min-height: 100px;
+			margin-top: 40px;
+			font-size: 10px;
+			box-sizing: border-box;
+			padding: 40px;
+		}
+
+		.clearfix {
+			height: 0px;
+			clear: both;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="masthead">
+		<header>
+			<div class="inner">
+				<h1 class="logo"><a href="#">Really Awesome Page</a></h1>
+				<nav>
+					<ul>
+						<li><a href="#">boop</a></li>
+						<li><a href="#">boop</a></li>
+						<li><a href="#">boop</a></li>
+						<li><a href="#">boop</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="content-container">
+			<div class="content">
+				<h2>This is the content</h2>
+				<p>I encourage all of you to use your developer tools to see what CSS is affecting what parts of this markup. I want you to comment out things to understand what they do and don't do. Please break this and make it again to understand what is happening</p>
+				<a href="#">Learn more >></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="fold inner">
+			<h2 class="fold-header">This is my awesome header</h2>
+			<h3 class="subheader">this is my awesome subheader</h3>
+			<p>This is some awesome copy. OMG I want to buy your product. OMG I want to have your children. OMG I want to sell those children to buy your product</p>
+			<div class="thirds">
+				<div class="info-box">
+					<h3>I have used box-sizing</h3>
+					<p>In order to have these layed out without pushing anything to the next level</p>
+				</div>
+			</div>
+
+			<div class="thirds">
+				<div class="info-box">
+					<h3>I have used box-sizing</h3>
+					<p>In order to have these layed out without pushing anything to the next level</p>
+				</div>
+			</div>
+
+			<div class="thirds">
+				<div class="info-box">
+					<h3>I have used box-sizing</h3>
+					<p>In order to have these layed out without pushing anything to the next level</p>
+				</div>
+			</div>
+
+			<br class="clearfix" />
+		</div>
+	</div>
+
+	<footer>
+		<div class="inner">
+			Copyright 2013 - Footer.
+		</div>
+	</footer>
+</body>
+
+</html>
